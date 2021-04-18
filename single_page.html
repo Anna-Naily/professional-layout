@@ -18,8 +18,8 @@
                 <div class="top-header-left">
                     <a href="index.html"><img src="image/logo.png" alt="logo"></a>
                     <form class="search-panel" action="#" method="get">
-                        <details>
-                            <summary>
+                        <details class="details-browse">
+                            <summary class="summary-browse">
                                 Browse
                             </summary>
                             <div class="details-element">
@@ -53,8 +53,47 @@
                     </form>
                 </div>
                 <div class="top-header-right">
-                    <a href="#"><img class="basket" src="image/logo_cart.svg" alt="cart"></a>
-                    <a href="#" class="button-account">My Account
+                    <details>
+                        <summary class="cart-details"><img class="basket" src="image/logo_cart.svg" alt="cart">
+                        </summary>
+                        <div class="cart-block">
+                            <div class="cart-element">
+                                <a class="img-cart" href="single_page.html"><img src="image/cart-photo.png"
+                                        alt="photo"></a>
+                                <div class="cart-info">
+                                    <h2 class="heading-cart">Rebox Zane</h2>
+                                    <div class="rating-block"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star-half-alt"></i></div>
+                                    <p class="count-cart">1 x $250</p>
+                                </div>
+                                <a href="#" class="delete-cart"><i class="fas fa-times-circle"></i></a>
+                            </div>
+                            <div class="cart-element">
+                                <a class="img-cart" href="single_page.html"><img src="image/cart-photo-2.png"
+                                        alt="photo"></a>
+                                <div class="cart-info">
+                                    <h2 class="heading-cart">Rebox Zane</h2>
+                                    <div class="rating-block"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star-half-alt"></i></div>
+                                    <p class="count-cart">1 x $250</p>
+                                </div>
+                                <a href="#" class="delete-cart"><i class="fas fa-times-circle"></i></a>
+                            </div>
+                            <div class="price-cart">
+                                <p class="total">total</p>
+                                <p class="total">$500.00</p>
+                            </div>
+                            <div class="button-cart">
+                                <a href="checkout.html" class="link-checkout">CHECKOUT
+                                </a>
+                                <a href="shopping_cart.html" class="link-checkout go-to-cart">GO TO CART
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+                    <a href="checkout.html" class="button-account">My Account
                         <div class="triangle"></div>
                     </a>
                 </div>
@@ -64,7 +103,7 @@
     <nav class="navigation">
         <div class="container">
             <ul class="menu">
-                <li class="menu-list"><a class="menu-link" href="single_page.html">HOME</a>
+                <li class="menu-list"><a class="menu-link" href="index.html">HOME</a>
                     <div class="mega-box">
                         <div class="mega-item">
                             <h3 class="item-heading">Home</h3>
@@ -119,7 +158,7 @@
                     </div>
 
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">MAN</a>
+                <li class="menu-list"><a class="menu-link" href="product.html">MAN</a>
                     <div class="mega-box">
                         <div class="mega-item">
                             <h3 class="item-heading">Man</h3>
@@ -173,7 +212,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">WOMEN</a>
+                <li class="menu-list"><a class="menu-link" href="product.html">WOMEN</a>
                     <div class="mega-box-centr">
                         <div class="mega-item">
                             <h3 class="item-heading">Women</h3>
@@ -227,7 +266,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">KIDS</a>
+                <li class="menu-list"><a class="menu-link" href="product.html">KIDS</a>
                     <div class="mega-box-centr">
                         <div class="mega-item">
                             <h3 class="item-heading">Kids</h3>
@@ -281,7 +320,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">ACCOSERIESE</a>
+                <li class="menu-list"><a class="menu-link" href="product.html">ACCOSERIESE</a>
                     <div class="mega-box-centr">
                         <div class="mega-item">
                             <h3 class="item-heading">Accoseries</h3>
@@ -335,7 +374,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">FEATURED</a>
+                <li class="menu-list"><a class="menu-link" href="product.html">FEATURED</a>
                     <div class="mega-box-right">
                         <div class="mega-item">
                             <h3 class="item-heading">Featured</h3>
@@ -389,7 +428,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">HOT DEALS</a>
+                <li class="menu-list"><a class="menu-link" href="product.html">HOT DEALS</a>
                     <div class="mega-box-right">
                         <div class="mega-item">
                             <h3 class="item-heading">Hot Deals</h3>
@@ -449,7 +488,9 @@
     <div class="breadcrumb-background">
         <div class="container breadcrumb">
             <h1 class="heading-arrivals">New Arrivals</h1>
-            <h2 class="heading-navigation-arrivals">Home / Men / <span class="span-new-arrivals">New Arrivals</span>
+            <h2 class="heading-navigation-arrivals"><a href="index.html" class="link-breadcrumb">Home /</a><a
+                    href="product.html" class="link-breadcrumb"> Men / </a><a href="single_page.html"
+                    class="link-breadcrumb"><span class="span-new-arrivals">New Arrivals</span></a>
             </h2>
         </div>
     </div>
@@ -464,6 +505,9 @@
     </div>
     <div class="container product-description">
         <h2 class="heading-collection">WOMEN COLLECTION</h2>
+        <div class="slider-single">
+            <img src="image/line-single.png" alt="logo">
+        </div>
         <h1 class="heading-product">Moschino Cheap And Chic</h1>
         <p class="description">Compellingly actualize fully researched processes before proactive outsourcing.
             Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
@@ -478,13 +522,16 @@
             <div class="filter-block">
                 <div class="filter-block-left">
                     <p class="product-filter">CHOOSE COLOR</p>
-                    <form class="product-forms" action="#" method="post">
-                        <select class="product-select" id="color">
-                            <option value="red">Red
-                            </option>
-                            <option value="black">Black</option>
-                        </select>
-                    </form>
+                    <div class="product-forms">
+                        <details class="details-select">
+                            <summary class="summary-product">
+                                <span class="summary-red">Red</span>
+                            </summary>
+                            <div class="summary-product-item">
+                                <span class="summary-black">Black</span>
+                            </div>
+                        </details>
+                    </div>
                 </div>
 
                 <div class="filter-block-center">
@@ -503,7 +550,7 @@
                 <div class="filter-block-right">
                     <p class="product-filter">QUANTITY</p>
                     <form class="product-forms" action="#" method="post">
-                        <input class="product-input" type="text" placeholder="2">
+                        <input class="product-input" type="number" min="1" max="10" placeholder="2">
                     </form>
                 </div>
 
@@ -516,19 +563,56 @@
     <div class="container you-may-block">
         <h1 class="heading-you-may">you may like also</h1>
         <ul class="card-block">
-            <li class="item-card"><a class="link-card" href="#"><img src="image/card-1.png" alt="photo">
+            <li class="item-card"><a class="link-card" href="single_page.html"><img class="img-product"
+                        src="image/card-1.png" alt="photo">
+                    <object type="owo/uwu">
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                    </object>
                     <p class="name-card">BLAZE LEGGINGS</p>
                     <p class="price-card">$52.00</p>
                 </a></li>
-            <li class="item-card"><a class="link-card" href="#"><img src="image/card-2.png" alt="photo">
+
+            <li class="item-card"><a class="link-card" href="single_page.html"><img class="img-product"
+                        src="image/card-2.png" alt="photo">
+                    <object type="owo/uwu">
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                    </object>
                     <p class="name-card">ALEXA SWEATER</p>
                     <p class="price-card">$52.00</p>
                 </a></li>
-            <li class="item-card"><a class="link-card" href="#"><img src="image/card-3.png" alt="photo">
+            <li class="item-card"><a class="link-card" href="single_page.html"><img class="img-product"
+                        src="image/card-3.png" alt="photo">
+                    <object type="owo/uwu">
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                    </object>
                     <p class="name-card">AGNES TOP</p>
                     <p class="price-card">$52.00</p>
                 </a></li>
-            <li class="item-card"><a class="link-card" href="#"><img src="image/card-4.png" alt="photo">
+            <li class="item-card"><a class="link-card" href="single_page.html"><img class="img-product"
+                        src="image/card-4.png" alt="photo">
+                    <object type="owo/uwu">
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                    </object>
                     <p class="name-card">SYLVA SWEATER</p>
                     <p class="price-card">$52.00</p>
                 </a></li>
@@ -546,6 +630,12 @@
                     </blockquote>
                     <p class="comment-text"><span class="signature">Bin Burhan</span><br>
                         Dhaka, Bd</p>
+                    <div class="slider-footer">
+                        <img src="image/line-slider-light.png" alt="logo">
+                        <img src="image/line-slider-pink.png" alt="logo">
+                        <img src="image/line-slider-light.png" alt="logo">
+
+                    </div>
                 </figure>
             </div>
             <div class="subscribe-block">
@@ -607,18 +697,18 @@
                     <p class="text-copy">&COPY;2021 Brand All Rights Reserved.</p>
                 </div>
                 <div class="block-icon">
-                    <a class="icon-link" href="#">
+                    <a class="icon-link" href="https://ru-ru.facebook.com/">
                         <i class="fab fa-facebook-square"></i></a>
-                    <a class="icon-link" href="#">
+                    <a class="icon-link" href="https://twitter.com/">
                         <i class="fab fa-twitter-square"></i></a>
                     </a>
-                    <a class="icon-link" href="#">
+                    <a class="icon-link" href="https://www.facebook.com/LinkedIn">
                         <i class="fab fa-linkedin"></i></a>
                     </a>
-                    <a class="icon-link" href="#">
+                    <a class="icon-link" href="https://www.pinterest.ru/">
                         <i class="fab fa-pinterest-square"></i></a>
                     </a>
-                    <a class="icon-link" href="#">
+                    <a class="icon-link" href="https://www.google.ru/">
                         <i class="fab fa-google-plus-square"></i></a>
                 </div>
             </div>
