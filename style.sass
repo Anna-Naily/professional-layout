@@ -304,6 +304,9 @@ nav ul li a:hover
     text-transform: uppercase
     transition: 0.2s
 
+.underline
+    border-bottom: 2px solid #f16d7f
+
 .mega-box
     border-radius: 5px
     border: 1px solid #e8e8e8
@@ -440,6 +443,17 @@ nav ul li a:hover
     position: absolute
     border-left: 12px solid #f16d7f
     padding-left: 12px
+    transition: 0.2s
+
+    animation: slideAnim 1s ease 0s 1 normal forwards
+@keyframes slideAnim
+    0%
+        opacity: 0
+        transform: translateX(-250px)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
 
 .heading-slide
     color: #222222
@@ -480,16 +494,34 @@ nav ul li a:hover
 
 .right-top-bar
     margin-bottom: 18.5px
-
+    transition: all .5s
+    &:hover
+        transform: scale(1) translate(50px, -45px)
+        box-shadow: #222222 0 0 15px
+.right-bottom-bar
+    transition: all .5s
+    &:hover
+        transform: scale(1) translate(50px, 45px)
+        box-shadow: #222222 0 0 15px
 .left-top-bar
     margin-bottom: 18.5px
+    transition: all 0.4s
+    &:hover
+        transform: scale(1) translate(-50px, -45px)
+        box-shadow: #222222 0 0 15px
+
+.left-bottom-bar
+    transition: all .5s
+    &:hover
+        transform: scale(1) translate(-50px, 45px)
+        box-shadow: #222222 0 0 15px
 
 .left-top
     top: 26px
     left: 0px
 
 .left-bottom
-    top: 588.5px
+    top: 26px
     left: 0px
 
 .right-top
@@ -497,7 +529,7 @@ nav ul li a:hover
     left: 0px
 
 .right-bottom
-    top: 308.5px
+    top: 26px
     left: 0px
 
 .text-bar
@@ -505,10 +537,6 @@ nav ul li a:hover
     letter-spacing: 0.75px
     color: #f16d7f
     text-transform: uppercase
-.banners
-    transition: 0.3s
-.banners:hover
-    opacity: 0.7
 
 .bottom-content
     margin-top: 93px
@@ -543,19 +571,29 @@ nav ul li a:hover
     justify-content: space-between
 
 .products-link
+
     text-decoration: none
     display: block
     padding-bottom: 21px
 
 .picture-product
+
+.item-products
     position: relative
+
+.link-add-to-cart
+    text-decoration: none
+    color: #FFFFFF
 
 .add-product
     position: absolute
+    display: flex
+    flex-direction: column
     color: white
     top: 110px
     left: 65px
     border: 1px solid #ffffff
+    border-radius: 3px
     padding: 5px 13px 7px 12px
     display: none
     font-family: Lato
@@ -564,6 +602,14 @@ nav ul li a:hover
     line-height: normal
     letter-spacing: normal
     text-align: left
+    &_bottom-left
+        padding: 9px 18px 9px 18px
+        top: 150px
+        left: 65px
+    &_botoom-right
+        padding: 5px 18px 5px 18px
+        top: 150px
+        left: 129px
 
 .cart
     margin-bottom: -6px
@@ -581,6 +627,9 @@ nav ul li a:hover
 .add-product:hover
     box-shadow: 0 0 10px #fff
 
+.add-product-product:hover
+    box-shadow: 0 0 10px #fff
+
 .name-product
     margin: 16px 0 16px 16px
     font-family: Lato
@@ -590,14 +639,29 @@ nav ul li a:hover
     letter-spacing: 0.35px
     color: #222222
 
-.price
+.text-rating-block
     margin-left: 16px
+    margin-right: 12px
+    display: flex
+    justify-content: space-between
+.price
     font-family: Lato
     font-size: 16px
     font-weight: bold
     line-height: 1.2
     letter-spacing: normal
     color: #f16d7f
+
+.rating-product
+    font-size: 15px
+    font-weight: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #e4af48
+    display: none
+
+.item-products:hover .text-rating-block .rating-product
+    display: block
 
 .bottom-products
     list-style-type: none
@@ -1203,10 +1267,13 @@ blockquote
     color: #f16d7f
     margin-top: 17px
     margin-left: 14px
+
+.summary-item-checkout
+
 .item-checkout
     border-bottom: 1px solid #e8e8e8
-    padding-bottom: 26px
     margin-top: 33px
+    padding-bottom: 26px
 
 .checkout-content
     margin-top: 89px
@@ -1215,10 +1282,12 @@ blockquote
     +text-parameters(Lato, 16px, bold, normal, normal, #222222)
     text-align: left
     text-transform: uppercase
+
 .shape-content
     display: flex
     margin-top: 39px
     padding-bottom: 79px
+
 .left-shape-content
     padding-left: 35px
 
@@ -1247,7 +1316,7 @@ blockquote
     &:hover
         color: #f16d7f
 
-.button-shipping-adress
+.button-shipping-address
     margin-top: 23px
     border: solid 1px #eaeaea
     background-color: #ffffff
@@ -1290,7 +1359,6 @@ summary
 
 .summary-item-checkout
     display: block
-    width: fit-content
     cursor: pointer
 
 .text-shape
@@ -1519,6 +1587,17 @@ summary
 
 .feature-icon
     margin-bottom: 32px
+    &:hover
+        animation: iconAnim 1s ease 0s 1 normal forwards
+
+@keyframes iconAnim
+    0%
+        opacity: 0
+        transform: rotate(-540deg) scale(2)
+
+    100%
+        opacity: 1
+        transform: rotate(0) scale(1)
 
 .heading-object-feature
     +text-parameters(Lato, 20px, bold, normal, 0.5px, #fbfbfb)
@@ -1526,3 +1605,213 @@ summary
 .text-object-feature
     +text-parameters(Lato, 14px, 300, 1.71, normal, #fbfbfb)
     margin-top: 17px
+
+.shopping-cart-block
+    margin-top: 90px
+
+.shopping-menu
+    display: flex
+    justify-content: space-between
+
+.product-details-element
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #eaeaea
+    padding-bottom: 25px
+    margin-top: 26px
+
+.product-details-element:first-child
+    padding-bottom: 20px
+    margin-top: 0px
+
+.shopping-card-box
+    display: flex
+    justify-content: space-between
+
+.link-shopping-card
+    text-decoration: none
+
+.shopping-info
+    display: flex
+    justify-content: space-between
+    padding-right: 15px
+    width: 560px
+    align-items: center
+
+.shopping-menu
+    width: 600px
+    display: flex
+    justify-content: space-between
+
+.shopping-info_margin
+    margin-right: 10px
+
+.text-shopping-info
+    +text-parameters(Lato, 13px, normal, 1.54, normal, #656565)
+
+.shopping-input
+    padding: 7px 5px 7px 25px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    width: 30px
+    outline: none
+    +text-parameters(Lato, 13px, normal, 1.54, normal, #656565)
+
+.shopping-description
+    margin-left: 21px
+.heading-shopping-menu
+    +text-parameters(Lato, 13px, bold, 1.54, -0.2px, #222222)
+    text-transform: uppercase
+
+.heading-shopping
+    +text-parameters(Lato, 13px, bold, normal, normal, #222222)
+    text-transform: uppercase
+
+.text-shopping
+    +text-parameters(Lato, 13px, 300, 1.54, normal, #6f6e6e)
+    text-align: left
+.span-txt-shopping
+    font-weight: bold
+    color: #575757
+
+.delete-product
+    text-decoration: none
+    color: #c0c0c0
+
+.button-block
+    display: flex
+    justify-content: space-between
+    margin-top: 44px
+
+.shopping-button
+    padding: 20px 38px 18px 39px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    +text-parameters(Lato, 14px, bold, normal, normal, #4a4a4a)
+    text-decoration: none
+    text-transform: uppercase
+    transition: 0.2s
+    &:hover
+        background-color: #ef5b70
+        border-color: #ef5b70
+        color: #fff
+
+.bottom-shopping-block
+    display: flex
+    justify-content: space-between
+    margin-top: 63px
+    margin-bottom: -18px
+
+.shipping-address
+    display: flex
+    flex-direction: column
+
+.heading-shipping-address
+    +text-parameters(Lato, 16px, bold, normal, normal, #222222)
+    text-align: left
+    text-transform: uppercase
+    width: 355px
+
+.select-address
+    width: 100%
+    margin-top: 23px
+    padding: 16px 0px 16px 18px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    +text-parameters(Lato, 13px, 300, normal, normal, #b1b1b1)
+    outline: none
+
+.state
+    +text-parameters(Lato, 13px, 300, normal, normal, #b1b1b1)
+    padding: 16px 17px 18px 17px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    margin-top: 20px
+    outline: none
+
+.get-a-quote
+    +text-parameters(Lato, 11px, bold, normal, normal, #4a4a4a)
+    padding: 12px 0px 12px 0px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    margin-top: 23px
+    cursor: pointer
+    text-transform: uppercase
+    width: 100px
+    transition: 0.2s
+    outline: none
+    &:hover
+        background-color: #ef5b70
+        border-color: #ef5b70
+        color: #fff
+
+.text-shipping-address
+
+    +text-parameters(Lato, 14px, 300, normal, normal,#000000)
+    margin-top: 28px
+    margin-bottom: 4px
+
+.coupon
+    +text-parameters(Lato, 11px, bold, normal, normal, #4a4a4a)
+    width: 118px
+    padding: 12px 0px 13px 0px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    cursor: pointer
+    text-transform: uppercase
+    margin-top: 25px
+    transition: 0.2s
+    outline: none
+    &:hover
+        background-color: #ef5b70
+        border-color: #ef5b70
+        color: #fff
+
+.proceed-to-checkout
+    display: flex
+    flex-direction: column
+    background-color: #f5f3f3
+    height: fit-content
+    padding-bottom: 42px
+    padding-left: 44px
+.text-check-block
+    text-align: right
+    border-bottom: 1px solid #e2e2e2
+    padding-bottom: 22px
+    margin: 40px 41px 17px 0px
+
+.text-sub-total
+    +text-parameters(Lato, 11px, normal, normal, normal, #4a4a4a)
+    text-transform: uppercase
+    margin-bottom: 14px
+
+.grand-total
+    +text-parameters(Lato, 16px, bold, normal, normal, #222222)
+    text-transform: uppercase
+
+.span-total
+    color: #f16d7f
+
+.link-proceed
+    text-transform: uppercase
+    text-decoration: none
+    padding: 19px 42px 18px 42px
+    border: solid 1px #eaeaea
+    background-color: #ffffff
+    margin-right: 43px
+    transition: 0.2s
+    +text-parameters(Lato, 16px, bold, normal, normal, #4a4a4a)
+    &:hover
+        background-color: #f16d7f
+        color: #ffffff
+        border-color: #f16d7f
+
+.rating-shopping-block
+    font-size: 13px
+    font-weight: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #e4af48
+    cursor: pointer
+    margin-top: 11px
+    margin-bottom: 15px

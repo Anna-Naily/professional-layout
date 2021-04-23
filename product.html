@@ -158,7 +158,7 @@
                     </div>
 
                 </li>
-                <li class="menu-list"><a class="menu-link" href="product.html">MAN</a>
+                <li class="menu-list"><a class="menu-link underline" href="product.html">MAN</a>
                     <div class="mega-box">
                         <div class="mega-item">
                             <h3 class="item-heading">Man</h3>
@@ -488,10 +488,10 @@
     <div class="breadcrumb-background">
         <div class="container breadcrumb">
             <h1 class="heading-arrivals">New Arrivals</h1>
-            <h2 class="heading-navigation-arrivals"><a href="index.html" class="link-breadcrumb">Home /</a><a
-                    href="product.html" class="link-breadcrumb"> Men / </a><a href="single_page.html"
-                    class="link-breadcrumb"><span class="span-new-arrivals">New Arrivals</span></a>
-            </h2>
+            <nav class="heading-navigation-arrivals"><a href="index.html" class="link-breadcrumb">Home /</a><a
+                    href="product.html" class="link-breadcrumb"> Men / </a><span class="span-new-arrivals">New
+                    Arrivals</span>
+            </nav>
         </div>
     </div>
     <div class="container product-page">
@@ -503,7 +503,7 @@
                     <i class="fas fa-sort-down"></i>
                 </summary>
                 <ul class="item-sidebar">
-                    <li class="list-sidebar"><a href="product.html" class="link-sidebar">Accessories</li>
+                    <li class="list-sidebar"><a href="product.html" class="link-sidebar">Accessories</a></li>
                     <li class="list-sidebar"><a href="product.html" class="link-sidebar">Bags</a></li>
                     <li class="list-sidebar"><a href="product.html" class="link-sidebar">Denim</a></li>
                     <li class="list-sidebar"><a href="product.html" class="link-sidebar">Hoodies & Sweatshirts</a></li>
@@ -523,7 +523,7 @@
                     <h2 class="heading-sidebar">BRAND</h2><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i>
                 </summary>
                 <ul class="item-sidebar">
-                    <li class="list-sidebar"><a href="product.html" class="link-sidebar">Accessories</li>
+                    <li class="list-sidebar"><a href="product.html" class="link-sidebar">Accessories</a></li>
                     <li class="list-sidebar"><a href="product.html" class="link-sidebar">Bags</a></li>
                     <li class="list-sidebar"><a href="product.html" class="link-sidebar">Denim</a></li>
                     <li class="list-sidebar"><a href="product.html" class="link-sidebar">Hoodies & Sweatshirts</a></li>
@@ -607,14 +607,15 @@
             </div>
             <div class="bottom-filter">
                 <form class="box-filter" action="#" method="post">
-                    <label class="sort" for="sorting">Sort By</label><select class="sort-by" id="sorting">
+                    <label class="sort" for="sorting_category">Sort By</label><select class="sort-by"
+                        id="sorting_category">
                         <option value="Name">Name</option>
                         <option value="Category">Category</option>
                         <option value="Price">Price</option>
                     </select>
                 </form>
                 <form class="box-filter" action="#" method="post">
-                    <label class="sort" for="sorting">Show</label><select class="sort-by" id="sorting">
+                    <label class="sort" for="sorting_pages">Show</label><select class="sort-by" id="sorting_pages">
                         <option value="09">09</option>
                         <option value="20">20</option>
                         <option value="50">50</option>
@@ -623,141 +624,286 @@
             </div>
             <div class="product-card-bar">
                 <ul class="item-card-bar">
-                    <li class="card-icon"><a class="card-link" href="single_page.html">
+                    <li class="item-products card-icon">
+                        <a class="card-link" href="single_page.html">
                             <div class="picture-card"><img class="img-product" src="image/product-card-1.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-2.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-3.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-4.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-5.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-6.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-7.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-8.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
-                    <li class="item-products card-icon"><a class="products-link" href="single_page.html">
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-products card-icon">
+                        <a class="products-link" href="single_page.html">
                             <div class="picture-product"><img class="img-product" src="image/product-card-9.png"
                                     alt="photo">
-                                <object type="owo/uwu">
-                                    <a href="shopping_cart.html" class="link-add-to-cart">
-                                        <div class="add-product">
-                                            <img class="cart" src="image/white-cart.svg" alt="white-cart">
-                                            Add to cart
-                                        </div>
-                                    </a>
-                                </object>
                             </div>
                             <h4 class="name-product">MANGO PEOPLE T-SHIRT</h4>
-                            <p class="price">$52.00</p>
-                        </a></li>
+                            <div class="text-rating-block">
+                                <p class="price">$52.00</p>
+                                <div class="rating-product">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product">
+                                <img class="cart" src="image/white-cart.svg" alt="white-cart">
+                                Add to cart
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_bottom-left">
+                                <img class="update" src="image/forma-1.svg" alt="white-cart">
+                            </div>
+                        </a>
+                        <a href="shopping_cart.html" class="link-add-to-cart">
+                            <div class="add-product add-product_botoom-right">
+                                <img class="like" src="image/forma-2.svg" alt="white-cart">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="navigation-page">
                 <ul class="page">
@@ -850,31 +996,33 @@
             <div class="item-footer">
                 <h3 class="footer-heading">COMPANY</h3>
                 <ul>
-                    <li class="list-item-footer"><a class="link-item-footer" href="single_page.html">Home</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Shop</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">About</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">How It Works</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Contact</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="index.html">Home</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="index.html">Shop</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="index.html">About</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="index.html">How It Works</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="index.html">Contact</a></li>
                 </ul>
             </div>
             <div class="item-footer">
                 <h3 class="footer-heading">INFORMATION</h3>
                 <ul>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Tearms & Condition</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Privacy Policy</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">How to Buy</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">How to Sell</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Promotion</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="checkout.html">Tearms & Condition</a>
+                    </li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="checkout.html">Privacy Policy</a>
+                    </li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="checkout.html">How to Buy</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="checkout.html">How to Sell</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="checkout.html">Promotion</a></li>
                 </ul>
             </div>
             <div class="item-footer">
                 <h3 class="footer-heading">SHOP CATEGORY</h3>
                 <ul>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Men</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Women</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Child</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Apparel</a></li>
-                    <li class="list-item-footer"><a class="link-item-footer" href="#">Brows All</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="product.html">Men</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="product.html">Women</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="product.html">Child</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="product.html">Apparel</a></li>
+                    <li class="list-item-footer"><a class="link-item-footer" href="product.html">Brows All</a></li>
 
                 </ul>
             </div>
@@ -889,13 +1037,13 @@
                         <i class="fab fa-facebook-square"></i></a>
                     <a class="icon-link" href="https://twitter.com/">
                         <i class="fab fa-twitter-square"></i></a>
-                    </a>
+
                     <a class="icon-link" href="https://www.facebook.com/LinkedIn">
                         <i class="fab fa-linkedin"></i></a>
-                    </a>
+
                     <a class="icon-link" href="https://www.pinterest.ru/">
                         <i class="fab fa-pinterest-square"></i></a>
-                    </a>
+
                     <a class="icon-link" href="https://www.google.ru/">
                         <i class="fab fa-google-plus-square"></i></a>
                 </div>
